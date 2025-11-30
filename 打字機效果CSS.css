@@ -1,0 +1,28 @@
+body{
+	background-color: #1a1a1a;
+	color: #ffffff;
+	font-family: Arial;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+h1{
+	font-size: 2em;
+	border-right: 0.1em solid white;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0 auto;
+	animation: point-text 0.75s step-end infinite;
+}
+p#point{
+	font-size: 1em;
+	color: #ffd700;
+	transition: opacity 0.5s;
+}
+@keyframes point-text{
+	from,to{border-color: transparent;}
+	50%{border-color: white;}
+}
